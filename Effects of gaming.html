@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects of gaming MABELA</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">MABELA</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Effects of gaming.html">Home</a></li>
+        <li><a href="try.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="Team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">MABELA | GROUP 6's Effects of gaming</div>
+      <br>
+      <h2>EG 8-9: Streaming Tools:</h2>
+      <p>What types of broadcasting software can we use for our stream?
+        - OBS Software and Melon.
+        What are the initial steps if you want to stream using a Chromebook?
+        - First, we need to ensure we have a good and stable wifi connection. Second, using chrome, go to the Melon website and make an account by signing in.
+        Next, you will have to verify your account before starting the stream. After verifying, you can now begin broadcasting your stream. 
+        What are the steps for using OBS Studio for streaming?
+        Go to the OBS studio website and download the app on your laptop or PC(make sure to pick the option that is more compatible with your laptop/PC).
+         Next, once installed, open the program and set up a source that you want to use. 
+         When selecting sources, make sure that the "Make source visible" is checked. 
+         If you will be choosing a media source, make sure that the audio monitoring is "Monitor and Output on the Audio monitoring.
+          You can delete a source by clicking the source and then select the minus sign (-). The arrows change the priority of the sources. 
+          Make sure to put the sources on top if it is the once you currently want to use. To start streaming, go to the control box and select start streaming.
+           When you select it, a pop-up box will appear. Select open settings. Select the stream and connect your account to start streaming.</p>
+        <p>EG 8 - 9 table:</p>
+        <img src="table.JPG" alt="Mind map" width="1000" height="1000">
+        <br>
+        <br>
+         <br>
+        <h3>EG 10: What's your content</h3>
+        <img src="mindmap.png" alt="Mind map" width="1000" height="500">
+         <p><b>Effects of gaming to our society</b></p>
+         <p>Why podcast?</p>
+         <br>
+         <img src="Beige Simple Business Plan Mind Map Brain Storm (1).png" alt="Mind map" width="1000" height="500">
+        <p>The following are some examples of applications that you can use to listen in a podcast:</p>
+        <li>Google Podcast</li>
+       <li>Downcast</li>
+        <li>Apple Podcast</li>
+          <li>Spotify</li>
+      <li>Anchor</li>
+         <li>Stitcher</li>
+          <li>Audecibel</li>
+        <p>Why Podcasts are great?</p>
+          <p>Unlike Youtube videos or Television shows, podcast users can listen to podcasts without needing to watch the screen, allowing them to listen on walks or when driving home from work.</p>
+          <br>
+          <br>
+      <h2>EG 11: Stream Design</h2>
+      <p>These are the logo and poster</p>
+      <br>
+      <img src="poster.png" alt="" width="550" height="800">
+      <img src="_Black White Minimalist Modern Bussines Icon Event Podcast Logo.png" alt="" width="500" height="380" class="center">
+      <br>
+      <p>And this is our draft for our stream design</p>
+      <br>
+      <img src="draft.png" alt="poster" width="1000" height="600">
+      <br>
+      <h2>EG 12: Guidelines to keep in mind</h2>
+      <img src="dosdonts.JPG" alt="poster" width="580" height="800">
+      <p>The Data Protection Act, 2012 is legislation enacted by the Parliament of the Republic of Ghana to protect the privacy and personal data of individuals.</p>
+      <p> It (1) protects the privacy of individuals while ensuring free flow of information to promote innovation and growth; (2) regulates the collection, recording, organization, storage, updating or modification, retrieval, consultation, use, consolidation, blocking, erasure or destruction of personal data; and (3) ensures that the Philippines complies with international standards set for data protection through National Privacy Commission (NPC).</p>
+    </div>
+  </div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
